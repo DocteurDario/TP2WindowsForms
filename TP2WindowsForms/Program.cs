@@ -17,6 +17,8 @@ namespace TP2WindowsForms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            
         }
     }
 }
