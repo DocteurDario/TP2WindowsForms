@@ -28,5 +28,29 @@ namespace TP2WindowsForms
             FormBusqueda VentanaBusqueda = new FormBusqueda();
             VentanaBusqueda.Show();
         }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAgregar VentanaAgregar = new FormAgregar();
+            VentanaAgregar.Show();
+        }
+
+        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormModificar ventanaModificar = new FormModificar();
+            ventanaModificar.Show();
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormEliminar ventanaEliminar =new FormEliminar();
+            ventanaEliminar.Show();
+        }
+
+        private void verDetalleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormVerDetalle ventanaVerDetalle = new FormVerDetalle();
+            ventanaVerDetalle.Show();
+        }
     }
 }

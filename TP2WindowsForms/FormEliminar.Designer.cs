@@ -1,6 +1,6 @@
 ﻿namespace TP2WindowsForms
 {
-    partial class FormBusqueda
+    partial class FormEliminar
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FormBusqueda
+            // FormEliminar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FormBusqueda";
-            this.Text = "Busqueda De Articulos";
+            this.Name = "FormEliminar";
+            this.Text = "Eliminar Articulo";
             this.ResumeLayout(false);
 
         }

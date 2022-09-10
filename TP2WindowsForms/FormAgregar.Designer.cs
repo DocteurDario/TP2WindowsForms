@@ -1,6 +1,6 @@
 ﻿namespace TP2WindowsForms
 {
-    partial class FormBusqueda
+    partial class FormAgregar
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FormBusqueda
+            // FormAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FormBusqueda";
-            this.Text = "Busqueda De Articulos";
+            this.Name = "FormAgregar";
+            this.Text = "Agregar Articulo";
             this.ResumeLayout(false);
 
         }
