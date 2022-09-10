@@ -9,6 +9,6 @@ namespace TP2WindowsForms
     internal class Categoria
     {
         public int IdCategoria { get; set; }    
-        public String NombreCategoria { set; get; } 
+        public String NombreCategoria { set; get; }  
     }
 }
