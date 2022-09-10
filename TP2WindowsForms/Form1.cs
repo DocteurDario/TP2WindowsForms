@@ -16,5 +16,17 @@ namespace TP2WindowsForms
         {
             InitializeComponent();
         }
+
+        private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListado ventanaListado = new FormListado();
+            ventanaListado.Show();
+        }
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormBusqueda VentanaBusqueda = new FormBusqueda();
+            VentanaBusqueda.Show();
+        }
     }
 }
