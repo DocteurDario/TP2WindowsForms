@@ -12,8 +12,8 @@ namespace TP2WindowsForms
         public int IdArtículo { get; set; } 
         public String NombreArticulo { get; set; }
         public String Descripcion { get; set; }
-        public Marca MarcaArticulo { get; set; }    
-        public Categoria CategoriaArticulo { get; set; }    
+        public Marca IdMarca { get; set; }    
+        public Categoria IdCategoria { get; set; }    
         public String Imagen { get; set; }  
         public float Precio { get; set; }   
     }
