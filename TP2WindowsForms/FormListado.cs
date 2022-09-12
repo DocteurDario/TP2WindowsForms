@@ -41,8 +41,7 @@ namespace TP2WindowsForms
             }
             catch (Exception ex)
             {
-                //throw ex;
-                pbxArticulo.Load("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png");
+                pbxArticulo.Load(ValidacionesGenerales.ErrroImagenNoEncontrada());
             }
         }
     }
