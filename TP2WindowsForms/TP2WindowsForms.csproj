@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Articulo.cs" />
+    <Compile Include="ArticuloDato.cs" />
     <Compile Include="Categoria.cs" />
+    <Compile Include="CategoriaDato.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +92,7 @@
     <Compile Include="FormVerDetalle.Designer.cs">
       <DependentUpon>FormVerDetalle.cs</DependentUpon>
     </Compile>
+    <Compile Include="MarcaDato.cs" />
     <Compile Include="Marca.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

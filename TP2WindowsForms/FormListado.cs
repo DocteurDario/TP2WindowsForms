@@ -16,5 +16,11 @@ namespace TP2WindowsForms
         {
             InitializeComponent();
         }
+
+        private void FormListado_Load(object sender, EventArgs e)
+        {
+            ArticuloDato dato = new ArticuloDato();
+            dgvListaArticulo.DataSource = dato.listarArticulos();
+        }
     }
 }

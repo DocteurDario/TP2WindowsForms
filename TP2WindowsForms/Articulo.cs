@@ -10,11 +10,12 @@ namespace TP2WindowsForms
     class Articulo
     {
         public int IdArtículo { get; set; } 
+        public String Codigo { get; set; } 
         public String NombreArticulo { get; set; }
         public String Descripcion { get; set; }
-        public Marca IdMarca { get; set; }    
-        public Categoria IdCategoria { get; set; }    
+       // public Marca IdMarca { get; set; }    
+        //public Categoria IdCategoria { get; set; }    
         public String Imagen { get; set; }  
-        public float Precio { get; set; }   
-    }
+        public Decimal Precio { get; set; }   
+    }   //
 }
