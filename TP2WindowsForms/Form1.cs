@@ -17,7 +17,7 @@ namespace TP2WindowsForms
             InitializeComponent();
         }
         private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
-        {   
+        {  
             foreach (var item in Application.OpenForms)
             {
                 if (item.GetType() == typeof(FormListado))
@@ -31,14 +31,11 @@ namespace TP2WindowsForms
             ventanaListado.Show();
         }
         private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            foreach (var item in Application.OpenForms)
+        {   
+            if (ValidacionesGenerales.ExisteVentanaAbierta(typeof(FormBusqueda)))
             {
-                if (item.GetType() == typeof(FormBusqueda))
-                {
-                    MessageBox.Show("Ya existe una ventana abierta, termine de trabajar allí!.. ");
-                    return;
-                }
+                MessageBox.Show("Ya existe una ventana abierta, termine de trabajar allí!.. ");
+                return;
             }
             FormBusqueda ventanaBusqueda = new FormBusqueda();
             ventanaBusqueda.MdiParent = this;
@@ -46,13 +43,10 @@ namespace TP2WindowsForms
         }
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (var item in Application.OpenForms)
+            if (ValidacionesGenerales.ExisteVentanaAbierta(typeof(FormAgregar)))
             {
-                if (item.GetType() == typeof(FormAgregar))
-                {
-                    MessageBox.Show("Ya existe una ventana abierta, termine de trabajar allí!.. ");
-                    return;
-                }
+                MessageBox.Show("Ya existe una ventana abierta, termine de trabajar allí!.. ");
+                return;
             }
             FormAgregar ventanaAgregar = new FormAgregar();
             ventanaAgregar.MdiParent = this;
@@ -60,28 +54,21 @@ namespace TP2WindowsForms
         }
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (var item in Application.OpenForms)
+            if (ValidacionesGenerales.ExisteVentanaAbierta(typeof(FormModificar)))
             {
-                if (item.GetType() == typeof(FormModificar))
-                {
-                    MessageBox.Show("Ya existe una ventana abierta, termine de trabajar allí!.. ");
-                    return;
-                }
+                MessageBox.Show("Ya existe una ventana abierta, termine de trabajar allí!.. ");
+                return;
             }
-
             FormModificar ventanaModificar = new FormModificar();
             ventanaModificar.MdiParent = this;
             ventanaModificar.Show();
         }
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (var item in Application.OpenForms)
+            if (ValidacionesGenerales.ExisteVentanaAbierta(typeof(FormEliminar)))// la forma usando una clase estatica
             {
-                if (item.GetType() == typeof(FormEliminar))
-                {
-                    MessageBox.Show("Ya existe una ventana abierta, termine de trabajar allí!.. ");
-                    return;
-                }
+                MessageBox.Show("Ya existe una ventana abierta, termine de trabajar allí!.. ");
+                return;
             }
             FormEliminar ventanaEliminar = new FormEliminar();
             ventanaEliminar.MdiParent = this;
@@ -89,7 +76,7 @@ namespace TP2WindowsForms
         }
         private void verDetalleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (var item in Application.OpenForms)
+            foreach (var item in Application.OpenForms)// la forma que explicaron en clase
             {
                 if (item.GetType() == typeof(FormVerDetalle))
                 {

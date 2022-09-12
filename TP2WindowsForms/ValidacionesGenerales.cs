@@ -8,16 +8,18 @@ using System.Windows.Forms;
 namespace TP2WindowsForms
 {
     static class ValidacionesGenerales
-    {    /*
-        public static bool ValidarVentanRepetida(GetType (Form))
+    {    
+        public static bool ExisteVentanaAbierta(Type FormType)
         {
             foreach (var item in Application.OpenForms)
             {
-                if (item.GetType() == typeof(FormAgregar ))
-                    return true;                
-                    else   return false;
+                if (item.GetType() == FormType)
+                {
+  
+                    return true;
+                }
             }
-        }
-        */
+            return false;
+        }   
     }
 }
