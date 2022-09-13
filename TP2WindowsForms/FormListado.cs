@@ -39,7 +39,7 @@ namespace TP2WindowsForms
             {
                 pbxArticulo.Load(imagen);
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 pbxArticulo.Load(ValidacionesGenerales.ErrroImagenNoEncontrada());
             }
