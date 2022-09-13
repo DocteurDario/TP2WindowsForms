@@ -1,0 +1,16 @@
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\bin\Debug\TP2WindowsForms.exe.config
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\bin\Debug\TP2WindowsForms.exe
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\bin\Debug\TP2WindowsForms.pdb
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.csproj.AssemblyReference.cache
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.Form1.resources
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.FormAgregar.resources
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.FormBusqueda.resources
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.FormEliminar.resources
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.FormListado.resources
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.FormModificar.resources
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.FormVerDetalle.resources
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.Properties.Resources.resources
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.csproj.GenerateResource.cache
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.exe
+C:\Users\figue\Desktop\TP2WindowsForms-master\TP2WindowsForms\obj\Debug\TP2WindowsForms.pdb

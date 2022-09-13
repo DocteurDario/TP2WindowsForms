@@ -19,7 +19,7 @@ namespace TP2WindowsForms
             {
                 conexion.ConnectionString = "server=.\\SQLEXPRESS;database=CATALOGO_DB;integrated segurity=true";
                 comando.CommandType=System.Data.CommandType.Text;
-                comando.CommandText = "select Id,Codigo,Nombre,Descripcion,IdMarca,IdCategoria,ImagenUrl,Precio from Articulos";
+                comando.CommandText = "select ID, Descripcion as 'Categoria' from MARCAS";
                 comando.Connection = conexion;
 
                 conexion.Open();
@@ -28,8 +28,10 @@ namespace TP2WindowsForms
                 while (lector.Read())
                 {
                     Marca marcaAux = new Marca();
-                    //marcaAux.Numero = lector.GetInt32(0);
-                    
+                    marcaAux.IdMarca = (int)lector["ID"];
+                    marcaAux.NombreMarca = (String)lector["Descripcion"];
+
+
                 }
 
                 return listaMarca;
@@ -37,6 +39,10 @@ namespace TP2WindowsForms
             catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                conexion.Close();
             }
             
         }
