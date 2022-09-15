@@ -23,7 +23,7 @@ namespace TP2WindowsForms
             DatosGrid();
             CategoriaDato categoria = new CategoriaDato();
             MarcaDato marca = new MarcaDato();
-
+            /*
             CbCategoria.DataSource = categoria.ListaDeCategorias();
             CbCategoria.ValueMember = "Id";
             CbCategoria.DisplayMember = "Categoria";
@@ -34,7 +34,7 @@ namespace TP2WindowsForms
             CbOrdenar.Items.Add("Código Z-A");
             CbOrdenar.Items.Add("Menor precio");
             CbOrdenar.Items.Add("Mayor precio");
-
+            */
         }
         private void dgvListaArticulo_SelectionChanged(object sender, EventArgs e)
         {

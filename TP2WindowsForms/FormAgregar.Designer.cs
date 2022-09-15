@@ -35,13 +35,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textCodigo = new System.Windows.Forms.TextBox();
+            this.textNombre = new System.Windows.Forms.TextBox();
+            this.cBoxCategoria = new System.Windows.Forms.ComboBox();
+            this.cBoxMarca = new System.Windows.Forms.ComboBox();
+            this.textDescripcion = new System.Windows.Forms.TextBox();
+            this.textUrl = new System.Windows.Forms.TextBox();
+            this.textPrecio = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnAdd = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -113,56 +113,56 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "URL Imagen:";
             // 
-            // textBox1
+            // textCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 20);
-            this.textBox1.TabIndex = 7;
+            this.textCodigo.Location = new System.Drawing.Point(84, 32);
+            this.textCodigo.Name = "textCodigo";
+            this.textCodigo.Size = new System.Drawing.Size(213, 20);
+            this.textCodigo.TabIndex = 7;
             // 
-            // textBox2
+            // textNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 20);
-            this.textBox2.TabIndex = 8;
+            this.textNombre.Location = new System.Drawing.Point(84, 58);
+            this.textNombre.Name = "textNombre";
+            this.textNombre.Size = new System.Drawing.Size(213, 20);
+            this.textNombre.TabIndex = 8;
             // 
-            // comboBox1
+            // cBoxCategoria
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(84, 137);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(213, 21);
-            this.comboBox1.TabIndex = 9;
+            this.cBoxCategoria.FormattingEnabled = true;
+            this.cBoxCategoria.Location = new System.Drawing.Point(84, 137);
+            this.cBoxCategoria.Name = "cBoxCategoria";
+            this.cBoxCategoria.Size = new System.Drawing.Size(213, 21);
+            this.cBoxCategoria.TabIndex = 9;
             // 
-            // comboBox2
+            // cBoxMarca
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(84, 110);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(213, 21);
-            this.comboBox2.TabIndex = 10;
+            this.cBoxMarca.FormattingEnabled = true;
+            this.cBoxMarca.Location = new System.Drawing.Point(84, 110);
+            this.cBoxMarca.Name = "cBoxMarca";
+            this.cBoxMarca.Size = new System.Drawing.Size(213, 21);
+            this.cBoxMarca.TabIndex = 10;
             // 
-            // textBox3
+            // textDescripcion
             // 
-            this.textBox3.Location = new System.Drawing.Point(84, 84);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(213, 20);
-            this.textBox3.TabIndex = 11;
+            this.textDescripcion.Location = new System.Drawing.Point(84, 84);
+            this.textDescripcion.Name = "textDescripcion";
+            this.textDescripcion.Size = new System.Drawing.Size(213, 20);
+            this.textDescripcion.TabIndex = 11;
             // 
-            // textBox4
+            // textUrl
             // 
-            this.textBox4.Location = new System.Drawing.Point(84, 164);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(213, 20);
-            this.textBox4.TabIndex = 12;
+            this.textUrl.Location = new System.Drawing.Point(84, 164);
+            this.textUrl.Name = "textUrl";
+            this.textUrl.Size = new System.Drawing.Size(213, 20);
+            this.textUrl.TabIndex = 12;
             // 
-            // textBox5
+            // textPrecio
             // 
-            this.textBox5.Location = new System.Drawing.Point(84, 190);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(213, 20);
-            this.textBox5.TabIndex = 13;
+            this.textPrecio.Location = new System.Drawing.Point(84, 190);
+            this.textPrecio.Name = "textPrecio";
+            this.textPrecio.Size = new System.Drawing.Size(213, 20);
+            this.textPrecio.TabIndex = 13;
             // 
             // pictureBox1
             // 
@@ -180,6 +180,7 @@
             this.BtnAdd.TabIndex = 17;
             this.BtnAdd.Text = "Agregar";
             this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // groupBox1
             // 
@@ -188,17 +189,17 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.textPrecio);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textUrl);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textDescripcion);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.cBoxMarca);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.cBoxCategoria);
+            this.groupBox1.Controls.Add(this.textCodigo);
+            this.groupBox1.Controls.Add(this.textNombre);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(580, 250);
@@ -214,6 +215,7 @@
             this.BtnCancel.TabIndex = 19;
             this.BtnCancel.Text = "Cancelar";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // FormAgregar
             // 
@@ -241,13 +243,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textCodigo;
+        private System.Windows.Forms.TextBox textNombre;
+        private System.Windows.Forms.ComboBox cBoxCategoria;
+        private System.Windows.Forms.ComboBox cBoxMarca;
+        private System.Windows.Forms.TextBox textDescripcion;
+        private System.Windows.Forms.TextBox textUrl;
+        private System.Windows.Forms.TextBox textPrecio;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.GroupBox groupBox1;
