@@ -45,8 +45,8 @@ namespace TP2WindowsForms
 
         private void OcultarColumns()
         {
-            dgvListaArticulo.Columns["ImagenURL"].Visible = false;
-            dgvListaArticulo.Columns["ID"].Visible = false;
+            dgvListaArticulo.Columns["Imagen"].Visible = false;
+            //dgvListaArticulo.Columns["ID"].Visible = false;
         }
 
         private void DatosGrid()
@@ -54,8 +54,9 @@ namespace TP2WindowsForms
             try
             {
                 ArticuloDato dato = new ArticuloDato();
-                listaArticulo = dato.listarArticulos();
+                listaArticulo = dato.listarArticulos();                
                 dgvListaArticulo.DataSource = listaArticulo;
+                OcultarColumns();
                 cargarImagen(listaArticulo[0].Imagen);
             }
             catch (Exception ex)
