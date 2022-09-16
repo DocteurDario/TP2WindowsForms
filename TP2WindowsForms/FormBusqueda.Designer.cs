@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "FormBusqueda";
             this.Text = "Busqueda De Articulos";
+            this.Load += new System.EventHandler(this.FormBusqueda_Load);
             this.ResumeLayout(false);
 
         }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Clases;
+using Conexion_a_DB;
 
 namespace TP2WindowsForms
 {
@@ -15,6 +17,11 @@ namespace TP2WindowsForms
         public FormVerDetalle()
         {
             InitializeComponent();
+        }
+
+        private void FormVerDetalle_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

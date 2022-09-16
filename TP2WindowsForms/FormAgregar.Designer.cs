@@ -42,11 +42,11 @@
             this.textDescripcion = new System.Windows.Forms.TextBox();
             this.textUrl = new System.Windows.Forms.TextBox();
             this.textPrecio = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PicBoxAdd = new System.Windows.Forms.PictureBox();
             this.BtnAdd = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BtnCancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAdd)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -164,13 +164,13 @@
             this.textPrecio.Size = new System.Drawing.Size(213, 20);
             this.textPrecio.TabIndex = 13;
             // 
-            // pictureBox1
+            // PicBoxAdd
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(303, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(239, 178);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.PicBoxAdd.Location = new System.Drawing.Point(303, 32);
+            this.PicBoxAdd.Name = "PicBoxAdd";
+            this.PicBoxAdd.Size = new System.Drawing.Size(239, 178);
+            this.PicBoxAdd.TabIndex = 14;
+            this.PicBoxAdd.TabStop = false;
             // 
             // BtnAdd
             // 
@@ -187,7 +187,7 @@
             this.groupBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.PicBoxAdd);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textPrecio);
             this.groupBox1.Controls.Add(this.label4);
@@ -227,7 +227,8 @@
             this.Controls.Add(this.BtnAdd);
             this.Name = "FormAgregar";
             this.Text = "Agregar Articulo";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.FormAgregar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAdd)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -250,7 +251,7 @@
         private System.Windows.Forms.TextBox textDescripcion;
         private System.Windows.Forms.TextBox textUrl;
         private System.Windows.Forms.TextBox textPrecio;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PicBoxAdd;
         private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button BtnCancel;

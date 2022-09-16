@@ -41,6 +41,9 @@
             this.BtnAdd = new System.Windows.Forms.Button();
             this.BtnEdit = new System.Windows.Forms.Button();
             this.BtnDelete = new System.Windows.Forms.Button();
+            this.BtnCancel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.BtnAplicar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaArticulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).BeginInit();
             this.SuspendLayout();
@@ -60,9 +63,9 @@
             // 
             // pbxArticulo
             // 
-            this.pbxArticulo.Location = new System.Drawing.Point(772, 78);
+            this.pbxArticulo.Location = new System.Drawing.Point(772, 13);
             this.pbxArticulo.Name = "pbxArticulo";
-            this.pbxArticulo.Size = new System.Drawing.Size(266, 296);
+            this.pbxArticulo.Size = new System.Drawing.Size(266, 361);
             this.pbxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxArticulo.TabIndex = 1;
             this.pbxArticulo.TabStop = false;
@@ -80,7 +83,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(78, 13);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(736, 20);
+            this.textBox1.Size = new System.Drawing.Size(688, 20);
             this.textBox1.TabIndex = 3;
             // 
             // label2
@@ -120,11 +123,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(407, 48);
+            this.label4.Location = new System.Drawing.Point(422, 48);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 13);
+            this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Categorias:";
+            this.label4.Text = "Marcas:";
             // 
             // CbMarca
             // 
@@ -152,6 +155,7 @@
             this.BtnEdit.TabIndex = 11;
             this.BtnEdit.Text = "Modificar";
             this.BtnEdit.UseVisualStyleBackColor = true;
+            this.BtnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
             // 
             // BtnDelete
             // 
@@ -161,12 +165,46 @@
             this.BtnDelete.TabIndex = 13;
             this.BtnDelete.Text = "Eliminar";
             this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            // 
+            // BtnCancel
+            // 
+            this.BtnCancel.Location = new System.Drawing.Point(662, 380);
+            this.BtnCancel.Name = "BtnCancel";
+            this.BtnCancel.Size = new System.Drawing.Size(104, 37);
+            this.BtnCancel.TabIndex = 14;
+            this.BtnCancel.Text = "Cancelar";
+            this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(691, 43);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "LIMPIAR ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // BtnAplicar
+            // 
+            this.BtnAplicar.Location = new System.Drawing.Point(610, 43);
+            this.BtnAplicar.Name = "BtnAplicar";
+            this.BtnAplicar.Size = new System.Drawing.Size(75, 23);
+            this.BtnAplicar.TabIndex = 16;
+            this.BtnAplicar.Text = "APLICAR";
+            this.BtnAplicar.UseVisualStyleBackColor = true;
+            this.BtnAplicar.Click += new System.EventHandler(this.BtnAplicar_Click);
             // 
             // FormListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 435);
+            this.Controls.Add(this.BtnAplicar);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.BtnEdit);
             this.Controls.Add(this.BtnAdd);
@@ -206,5 +244,8 @@
         private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.Button BtnEdit;
         private System.Windows.Forms.Button BtnDelete;
+        private System.Windows.Forms.Button BtnCancel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnAplicar;
     }
 }

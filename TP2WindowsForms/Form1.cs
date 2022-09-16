@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Clases;
+using Conexion_a_DB;
 
 namespace TP2WindowsForms
 {
@@ -52,28 +54,8 @@ namespace TP2WindowsForms
             ventanaAgregar.MdiParent = this;
             ventanaAgregar.Show();
         }
-        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (ValidacionesGenerales.ExisteVentanaAbierta(typeof(FormModificar)))
-            {
-                MessageBox.Show("Ya existe una ventana abierta, termine de trabajar allí!.. ");
-                return;
-            }
-            FormModificar ventanaModificar = new FormModificar();
-            ventanaModificar.MdiParent = this;
-            ventanaModificar.Show();
-        }
-        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (ValidacionesGenerales.ExisteVentanaAbierta(typeof(FormEliminar)))// la forma usando una clase estatica
-            {
-                MessageBox.Show("Ya existe una ventana abierta, termine de trabajar allí!.. ");
-                return;
-            }
-            FormEliminar ventanaEliminar = new FormEliminar();
-            ventanaEliminar.MdiParent = this;
-            ventanaEliminar.Show();
-        }
+
+
         private void verDetalleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (var item in Application.OpenForms)// la forma que explicaron en clase
@@ -87,6 +69,11 @@ namespace TP2WindowsForms
             FormVerDetalle ventanaVerDetalle = new FormVerDetalle();
             ventanaVerDetalle.MdiParent = this;
             ventanaVerDetalle.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

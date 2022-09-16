@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "FormVerDetalle";
             this.Text = "Ver Detalle De Articulo";
+            this.Load += new System.EventHandler(this.FormVerDetalle_Load);
             this.ResumeLayout(false);
 
         }
