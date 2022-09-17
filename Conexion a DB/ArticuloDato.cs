@@ -35,14 +35,24 @@ namespace Conexion_a_DB
                         Aux.IdArtículo = (int)lector["IdP"];
                         Aux.Codigo= (string)lector["Codigo"];
                         Aux.NombreArticulo = (string)lector["Nombre"];
+
+                        if (!(lector["Descripcion"] is DBNull))
                         Aux.Descripcion = (string)lector["Descripcion"];
+
                         Aux.Marca = new Marca();
                         Aux.Marca.IdMarca = (int)lector["Id"];
                         Aux.Marca.NombreMarca = (string)lector["Marca"];
                         Aux.Categoria = new Categoria();
                         Aux.Categoria.IdCategoria = (int)lector["Id"];
                         Aux.Categoria.NombreCategoria = (string)lector["Categoria"];
+
+                        // if (!(lector.IsDBNull(lector.GetOrdinal("ImagenURL")))) 
+                        //Aux.Imagen = (string)lector["ImagenURL"];
+
+                        if (!(lector["ImagenURL"] is DBNull))
                         Aux.Imagen = (string)lector["ImagenURL"];
+
+
                         Aux.Precio = (decimal)lector["Precio"];
                        
                        lista.Add(Aux);

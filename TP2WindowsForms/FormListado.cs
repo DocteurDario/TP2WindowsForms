@@ -27,20 +27,28 @@ namespace TP2WindowsForms
             CategoriaDato categoria = new CategoriaDato();
             MarcaDato marca = new MarcaDato();
 
-            CbCategoria.DataSource = categoria.ListaDeCategorias();
-            CbCategoria.ValueMember = "IdCategoria";
-            CbCategoria.DisplayMember = "NombreCategoria";
+            try
+            {
+                CbCategoria.DataSource = categoria.ListaDeCategorias();
+                CbCategoria.ValueMember = "IdCategoria";
+                CbCategoria.DisplayMember = "NombreCategoria";
 
-            CbMarca.DataSource = marca.listaDeMarcas();
-            CbMarca.ValueMember = "IdMarca";
-            CbMarca.DisplayMember = "NombreMarca";
+                CbMarca.DataSource = marca.listaDeMarcas();
+                CbMarca.ValueMember = "IdMarca";
+                CbMarca.DisplayMember = "NombreMarca";
 
-            CbOrdenar.Items.Add("Código A-Z");
-            CbOrdenar.Items.Add("Código Z-A");
-            CbOrdenar.Items.Add("Menor precio");
-            CbOrdenar.Items.Add("Mayor precio");
+                CbOrdenar.Items.Add("Código A-Z");
+                CbOrdenar.Items.Add("Código Z-A");
+                CbOrdenar.Items.Add("Menor precio");
+                CbOrdenar.Items.Add("Mayor precio");
 
-            Borrar_Cb();
+                Borrar_Cb();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void Borrar_Cb()

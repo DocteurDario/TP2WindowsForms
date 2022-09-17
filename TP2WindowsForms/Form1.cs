@@ -32,17 +32,7 @@ namespace TP2WindowsForms
             ventanaListado.MdiParent = this;
             ventanaListado.Show();
         }
-        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
-        {   
-            if (ValidacionesGenerales.ExisteVentanaAbierta(typeof(FormBusqueda)))
-            {
-                MessageBox.Show("Ya existe una ventana abierta, termine de trabajar allí!.. ");
-                return;
-            }
-            FormBusqueda ventanaBusqueda = new FormBusqueda();
-            ventanaBusqueda.MdiParent = this;
-            ventanaBusqueda.Show();
-        }
+        
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (ValidacionesGenerales.ExisteVentanaAbierta(typeof(FormAgregar)))
