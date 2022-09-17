@@ -55,8 +55,11 @@
             this.dgvListaArticulo.AllowUserToResizeColumns = false;
             this.dgvListaArticulo.AllowUserToResizeRows = false;
             this.dgvListaArticulo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaArticulo.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvListaArticulo.Location = new System.Drawing.Point(12, 78);
+            this.dgvListaArticulo.MultiSelect = false;
             this.dgvListaArticulo.Name = "dgvListaArticulo";
+            this.dgvListaArticulo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListaArticulo.Size = new System.Drawing.Size(754, 296);
             this.dgvListaArticulo.TabIndex = 0;
             this.dgvListaArticulo.SelectionChanged += new System.EventHandler(this.dgvListaArticulo_SelectionChanged);
