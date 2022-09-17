@@ -178,5 +178,24 @@ namespace TP2WindowsForms
             }
             
         }
+
+        private void textBoxBuscar_TextChanged(object sender, EventArgs e)
+        {
+            List<Articulo> listaFiltrada;
+            string filtro = textBoxBuscar.Text;
+
+            if (filtro != "")
+            {
+                listaFiltrada = listaArticulo.FindAll(x => x.NombreArticulo.ToUpper().Contains(filtro.ToUpper())||x.Descripcion.ToUpper().Contains(filtro.ToUpper())|| x.Codigo.ToUpper().Contains(filtro.ToUpper()));
+            }
+            else
+            {
+                listaFiltrada = listaArticulo;
+            }
+            dgvListaArticulo.DataSource=null;
+            dgvListaArticulo.DataSource = listaFiltrada;
+            OcultarColumns();
+
+        }
     }
 }

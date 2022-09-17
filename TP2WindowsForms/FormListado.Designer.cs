@@ -31,7 +31,7 @@
             this.dgvListaArticulo = new System.Windows.Forms.DataGridView();
             this.pbxArticulo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxBuscar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.CbOrdenar = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -82,12 +82,13 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Busqueda:";
             // 
-            // textBox1
+            // textBoxBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(78, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(688, 20);
-            this.textBox1.TabIndex = 3;
+            this.textBoxBuscar.Location = new System.Drawing.Point(78, 13);
+            this.textBoxBuscar.Name = "textBoxBuscar";
+            this.textBoxBuscar.Size = new System.Drawing.Size(688, 20);
+            this.textBoxBuscar.TabIndex = 3;
+            this.textBoxBuscar.TextChanged += new System.EventHandler(this.textBoxBuscar_TextChanged);
             // 
             // label2
             // 
@@ -217,7 +218,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.CbOrdenar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxBuscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbxArticulo);
             this.Controls.Add(this.dgvListaArticulo);
@@ -237,7 +238,7 @@
         private System.Windows.Forms.DataGridView dgvListaArticulo;
         private System.Windows.Forms.PictureBox pbxArticulo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxBuscar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox CbOrdenar;
         private System.Windows.Forms.Label label3;
