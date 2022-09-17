@@ -1,9 +1,0 @@
-C:\Users\figue\Desktop\TP2WindowsForms-master\Conexion a DB\bin\Debug\Conexion a DB.dll
-C:\Users\figue\Desktop\TP2WindowsForms-master\Conexion a DB\bin\Debug\Conexion a DB.pdb
-C:\Users\figue\Desktop\TP2WindowsForms-master\Conexion a DB\bin\Debug\Clases.dll
-C:\Users\figue\Desktop\TP2WindowsForms-master\Conexion a DB\bin\Debug\Clases.pdb
-C:\Users\figue\Desktop\TP2WindowsForms-master\Conexion a DB\obj\Debug\Conexion a DB.csproj.AssemblyReference.cache
-C:\Users\figue\Desktop\TP2WindowsForms-master\Conexion a DB\obj\Debug\Conexion a DB.csproj.CoreCompileInputs.cache
-C:\Users\figue\Desktop\TP2WindowsForms-master\Conexion a DB\obj\Debug\Conexion a DB.csproj.CopyComplete
-C:\Users\figue\Desktop\TP2WindowsForms-master\Conexion a DB\obj\Debug\Conexion a DB.dll
-C:\Users\figue\Desktop\TP2WindowsForms-master\Conexion a DB\obj\Debug\Conexion a DB.pdb
