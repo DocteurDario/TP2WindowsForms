@@ -56,7 +56,7 @@
             this.label1.Location = new System.Drawing.Point(35, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 10;
             this.label1.Text = "Codigo:";
             // 
             // label2
@@ -118,14 +118,14 @@
             this.textCodigo.Location = new System.Drawing.Point(84, 32);
             this.textCodigo.Name = "textCodigo";
             this.textCodigo.Size = new System.Drawing.Size(213, 20);
-            this.textCodigo.TabIndex = 7;
+            this.textCodigo.TabIndex = 0;
             // 
             // textNombre
             // 
             this.textNombre.Location = new System.Drawing.Point(84, 58);
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(213, 20);
-            this.textNombre.TabIndex = 8;
+            this.textNombre.TabIndex = 1;
             // 
             // cBoxCategoria
             // 
@@ -134,7 +134,7 @@
             this.cBoxCategoria.Location = new System.Drawing.Point(84, 137);
             this.cBoxCategoria.Name = "cBoxCategoria";
             this.cBoxCategoria.Size = new System.Drawing.Size(213, 21);
-            this.cBoxCategoria.TabIndex = 9;
+            this.cBoxCategoria.TabIndex = 4;
             // 
             // cBoxMarca
             // 
@@ -143,28 +143,29 @@
             this.cBoxMarca.Location = new System.Drawing.Point(84, 110);
             this.cBoxMarca.Name = "cBoxMarca";
             this.cBoxMarca.Size = new System.Drawing.Size(213, 21);
-            this.cBoxMarca.TabIndex = 10;
+            this.cBoxMarca.TabIndex = 3;
             // 
             // textDescripcion
             // 
             this.textDescripcion.Location = new System.Drawing.Point(84, 84);
             this.textDescripcion.Name = "textDescripcion";
             this.textDescripcion.Size = new System.Drawing.Size(213, 20);
-            this.textDescripcion.TabIndex = 11;
+            this.textDescripcion.TabIndex = 2;
             // 
             // textUrl
             // 
             this.textUrl.Location = new System.Drawing.Point(84, 164);
             this.textUrl.Name = "textUrl";
             this.textUrl.Size = new System.Drawing.Size(213, 20);
-            this.textUrl.TabIndex = 12;
+            this.textUrl.TabIndex = 5;
+            this.textUrl.Leave += new System.EventHandler(this.textUrl_Leave);
             // 
             // textPrecio
             // 
             this.textPrecio.Location = new System.Drawing.Point(84, 190);
             this.textPrecio.Name = "textPrecio";
             this.textPrecio.Size = new System.Drawing.Size(213, 20);
-            this.textPrecio.TabIndex = 13;
+            this.textPrecio.TabIndex = 6;
             // 
             // PicBoxAdd
             // 
@@ -179,7 +180,7 @@
             this.BtnAdd.Location = new System.Drawing.Point(506, 281);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(86, 37);
-            this.BtnAdd.TabIndex = 17;
+            this.BtnAdd.TabIndex = 0;
             this.BtnAdd.Text = "Agregar";
             this.BtnAdd.UseVisualStyleBackColor = true;
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
@@ -205,7 +206,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(580, 250);
-            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar articulo";
             // 
@@ -214,7 +215,7 @@
             this.BtnCancel.Location = new System.Drawing.Point(414, 281);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(86, 37);
-            this.BtnCancel.TabIndex = 19;
+            this.BtnCancel.TabIndex = 1;
             this.BtnCancel.Text = "Cancelar";
             this.BtnCancel.UseVisualStyleBackColor = true;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
@@ -228,7 +229,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnAdd);
             this.Name = "FormAgregar";
-            this.Text = "Agregar Articulo";
+            this.Text = "00";
             this.Load += new System.EventHandler(this.FormAgregar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxAdd)).EndInit();
             this.groupBox1.ResumeLayout(false);

@@ -126,5 +126,10 @@ namespace TP2WindowsForms
                 throw;
             }
         }
+        private void textUrl_Leave(object sender, EventArgs e)
+        {
+            cargarImagen(textUrl.Text);
+        }
+        
     }
 }
