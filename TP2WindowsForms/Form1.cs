@@ -18,6 +18,9 @@ namespace TP2WindowsForms
         {
             InitializeComponent();
         }
+
+        
+
         private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
         {  
             foreach (var item in Application.OpenForms)

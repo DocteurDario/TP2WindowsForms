@@ -16,3 +16,12 @@ C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion
 C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\4 ( Se borro Carpeta )\Conexion a DB\obj\Debug\Conexion a DB.csproj.CopyComplete
 C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\4 ( Se borro Carpeta )\Conexion a DB\obj\Debug\Conexion a DB.dll
 C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\4 ( Se borro Carpeta )\Conexion a DB\obj\Debug\Conexion a DB.pdb
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\Conexion a DB\bin\Debug\Conexion a DB.dll
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\Conexion a DB\bin\Debug\Conexion a DB.pdb
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\Conexion a DB\bin\Debug\Clases.dll
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\Conexion a DB\bin\Debug\Clases.pdb
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\Conexion a DB\obj\Debug\Conexion a DB.csproj.AssemblyReference.cache
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\Conexion a DB\obj\Debug\Conexion a DB.csproj.CoreCompileInputs.cache
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\Conexion a DB\obj\Debug\Conexion a DB.csproj.CopyComplete
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\Conexion a DB\obj\Debug\Conexion a DB.dll
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\Conexion a DB\obj\Debug\Conexion a DB.pdb

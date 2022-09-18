@@ -53,3 +53,22 @@ C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion
 C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\4 ( Se borro Carpeta )\TP2WindowsForms\obj\Debug\TP2WindowsForms.csproj.CopyComplete
 C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\4 ( Se borro Carpeta )\TP2WindowsForms\obj\Debug\TP2WindowsForms.exe
 C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\4 ( Se borro Carpeta )\TP2WindowsForms\obj\Debug\TP2WindowsForms.pdb
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\bin\Debug\TP2WindowsForms.exe.config
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\bin\Debug\TP2WindowsForms.exe
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\bin\Debug\TP2WindowsForms.pdb
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\bin\Debug\Clases.dll
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\bin\Debug\Conexion a DB.dll
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\bin\Debug\Clases.pdb
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\bin\Debug\Conexion a DB.pdb
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.csproj.AssemblyReference.cache
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.csproj.SuggestedBindingRedirects.cache
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.Form1.resources
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.FormAgregar.resources
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.FormListado.resources
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.FormVerDetalle.resources
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.Properties.Resources.resources
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.csproj.GenerateResource.cache
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.csproj.CopyComplete
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.exe
+C:\Users\brigi\OneDrive\Documentos\Darío\TUP 2022\2do Cuatrimestre\Programacion III\Repositorio\5\TP2WindowsForms\obj\Debug\TP2WindowsForms.pdb

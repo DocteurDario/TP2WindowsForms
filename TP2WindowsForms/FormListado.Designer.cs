@@ -101,6 +101,7 @@
             // 
             // CbOrdenar
             // 
+            this.CbOrdenar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbOrdenar.FormattingEnabled = true;
             this.CbOrdenar.Location = new System.Drawing.Point(77, 45);
             this.CbOrdenar.Name = "CbOrdenar";
@@ -123,7 +124,7 @@
             this.CbCategoria.Name = "CbCategoria";
             this.CbCategoria.Size = new System.Drawing.Size(121, 21);
             this.CbCategoria.TabIndex = 7;
-            // 
+            
             // label4
             // 
             this.label4.AutoSize = true;
@@ -135,11 +136,13 @@
             // 
             // CbMarca
             // 
+            this.CbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbMarca.FormattingEnabled = true;
             this.CbMarca.Location = new System.Drawing.Point(473, 45);
             this.CbMarca.Name = "CbMarca";
             this.CbMarca.Size = new System.Drawing.Size(121, 21);
             this.CbMarca.TabIndex = 9;
+            
             // 
             // BtnAdd
             // 

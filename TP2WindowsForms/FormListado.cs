@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,7 @@ namespace TP2WindowsForms
         {
             InitializeComponent();
         }
+
 
         private void FormListado_Load(object sender, EventArgs e)
         {
@@ -80,7 +82,7 @@ namespace TP2WindowsForms
             try
             {
                 ArticuloDato dato = new ArticuloDato();
-                listaArticulo = dato.listarArticulos();                
+                listaArticulo = dato.listarArticulos();
                 dgvListaArticulo.DataSource = listaArticulo;
                 OcultarColumns();
                 cargarImagen(listaArticulo[0].Imagen);
@@ -100,7 +102,7 @@ namespace TP2WindowsForms
             {
                 pbxArticulo.Load(imagen);
             }
-            catch (Exception )
+            catch (Exception)
             {
                 pbxArticulo.Load(ValidacionesGenerales.ErrroImagenNoEncontrada());
             }
@@ -121,12 +123,13 @@ namespace TP2WindowsForms
             try
             {
                 DialogResult result = MessageBox.Show("¿DESEA ELIMINAR EL ARTICULO SELECCIONADO?", "ELIMINADO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if(result == DialogResult.Yes){
+                if (result == DialogResult.Yes)
+                {
 
                     Select = (Articulo)dgvListaArticulo.CurrentRow.DataBoundItem;
                     articulo.Eliminar(Select);
                     DatosGrid();
-                    
+
                 }
             }
             catch (Exception Ex)
@@ -140,6 +143,7 @@ namespace TP2WindowsForms
         private void button1_Click(object sender, EventArgs e)
         {
             Borrar_Cb();
+            DatosGrid();
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
@@ -151,9 +155,20 @@ namespace TP2WindowsForms
         {
             Articulo Select = new Articulo();
             Select = (Articulo)dgvListaArticulo.CurrentRow.DataBoundItem;
-            FormAgregar formAgregar = new FormAgregar(Select);
-            formAgregar.ShowDialog();
-            DatosGrid();
+            // Agregar una exepcion que indique que elija una opcion -- no funciona bien corregir
+            try
+            {
+                FormAgregar formAgregar = new FormAgregar(Select);
+                formAgregar.ShowDialog();
+                DatosGrid();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Tiene que elegir un articulo " + ex);
+            }
+
         }
 
         private void Lista(List<Articulo> articulos)
@@ -165,18 +180,37 @@ namespace TP2WindowsForms
 
         private void BtnAplicar_Click(object sender, EventArgs e)
         {
-            if(CbOrdenar.SelectedIndex != -1)
+            if (CbOrdenar.SelectedIndex != -1)
             {
                 ArticuloDato dato = new ArticuloDato();
                 string criterio = CbOrdenar.Text;
                 Lista(dato.Ordenar(criterio));
             }
 
-            if(CbCategoria.SelectedIndex != -1 && CbMarca.SelectedIndex != -1)
+            if (CbCategoria.SelectedIndex != -1 && CbMarca.SelectedIndex != -1)
             {
+                Articulo Aux = new Articulo();
+                List<Articulo> lista;
+                Aux.Categoria = (Categoria)CbCategoria.SelectedItem;
+                Aux.Marca = (Marca)CbMarca.SelectedItem;
+
+
+
+                if (CbCategoria.SelectedIndex != -1)
+                {
+                    lista = listaArticulo.FindAll(x => x.Categoria.IdCategoria == Aux.Categoria.IdCategoria);
+                }
+                else
+                {
+                    lista = listaArticulo.FindAll(x => x.Categoria.IdCategoria == Aux.Categoria.IdCategoria && x.Marca.IdMarca == Aux.Marca.IdMarca);
+                }
+
+                Lista(lista);
+                OcultarColumns();
 
             }
-            
+
+
         }
 
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
@@ -186,16 +220,20 @@ namespace TP2WindowsForms
 
             if (filtro != "")
             {
-                listaFiltrada = listaArticulo.FindAll(x => x.NombreArticulo.ToUpper().Contains(filtro.ToUpper())||x.Descripcion.ToUpper().Contains(filtro.ToUpper())|| x.Codigo.ToUpper().Contains(filtro.ToUpper()));
+                listaFiltrada = listaArticulo.FindAll(x => x.NombreArticulo.ToUpper().Contains(filtro.ToUpper()) || x.Descripcion.ToUpper().Contains(filtro.ToUpper()) || x.Codigo.ToUpper().Contains(filtro.ToUpper()));
             }
             else
             {
                 listaFiltrada = listaArticulo;
             }
-            dgvListaArticulo.DataSource=null;
+            dgvListaArticulo.DataSource = null;
             dgvListaArticulo.DataSource = listaFiltrada;
             OcultarColumns();
 
         }
     }
 }
+        
+       
+        
+       
