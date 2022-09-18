@@ -44,13 +44,25 @@ namespace TP2WindowsForms
                 }
 
                 AuxArt.Codigo = textCodigo.Text;
+
+
                 AuxArt.NombreArticulo = textNombre.Text;
                 AuxArt.Descripcion = textDescripcion.Text;
                 AuxArt.Marca = (Marca)cBoxMarca.SelectedItem;
                 AuxArt.Categoria = (Categoria)cBoxCategoria.SelectedItem;
                 AuxArt.Imagen = textUrl.Text;
-                AuxArt.Precio = decimal.Parse(textPrecio.Text);
+                decimal prcio = decimal.Parse(textPrecio.Text);
+                    if (ValidacionesGenerales.ValidarNumeroPositivo(prcio))
+                    {
+                        AuxArt.Precio = prcio;
+                    }
+                     else
+                    {
+                         MessageBox.Show("Ingrese un Precio positivo");
+                         return;
+                    }
 
+                
                 if(AuxArt.IdArtículo != 0)
                 {
                     MessageBox.Show(AuxArt.IdArtículo.ToString());

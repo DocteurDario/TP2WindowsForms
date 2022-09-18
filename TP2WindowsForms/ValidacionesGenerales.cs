@@ -25,5 +25,15 @@ namespace TP2WindowsForms
             return "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png";
         }
 
+        public static bool ValidarNumeroPositivo(decimal precio)
+        {
+            if (precio >= 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        
+
     }
 }
