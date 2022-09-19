@@ -34,6 +34,7 @@ namespace TP2WindowsForms
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
+
             ArticuloDato articuloDato = new ArticuloDato(); 
 
             try
@@ -44,15 +45,35 @@ namespace TP2WindowsForms
                 }
 
                 AuxArt.Codigo = textCodigo.Text;
-
-
                 AuxArt.NombreArticulo = textNombre.Text;
                 AuxArt.Descripcion = textDescripcion.Text;
                 AuxArt.Marca = (Marca)cBoxMarca.SelectedItem;
                 AuxArt.Categoria = (Categoria)cBoxCategoria.SelectedItem;
                 AuxArt.Imagen = textUrl.Text;
-                decimal prcio = decimal.Parse(textPrecio.Text);
-                    if (ValidacionesGenerales.ValidarNumeroPositivo(prcio))
+                decimal prcio;
+
+                if (textPrecio.Text.Length != 0)
+                {
+                    prcio = decimal.Parse(textPrecio.Text);
+                }
+                else
+                {
+                    MessageBox.Show("flaco te falta algo...");
+                    return;
+                }
+
+                    if(textCodigo.Text.Length == 0 || textDescripcion.Text.Length == 0 || textNombre.Text.Length == 0 || textUrl.Text.Length == 0)
+                    {                 
+                       MessageBox.Show("flaco te falta algo...");
+                       return;
+                    }
+                    if (textCodigo.Text.Length == 0 && textDescripcion.Text.Length == 0 && textNombre.Text.Length == 0 && textPrecio.Text.Length == 0 && textUrl.Text.Length == 0)
+                    {
+                        MessageBox.Show("flaco te falta algo...");
+                        return;
+                    }
+
+                if (ValidacionesGenerales.ValidarNumeroPositivo(prcio))
                     {
                         AuxArt.Precio = prcio;
                     }
@@ -142,6 +163,10 @@ namespace TP2WindowsForms
         {
             cargarImagen(textUrl.Text);
         }
-        
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

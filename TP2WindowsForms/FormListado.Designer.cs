@@ -62,13 +62,15 @@
             this.dgvListaArticulo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListaArticulo.Size = new System.Drawing.Size(754, 296);
             this.dgvListaArticulo.TabIndex = 0;
+            this.dgvListaArticulo.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaArticulo_CellDoubleClick);
             this.dgvListaArticulo.SelectionChanged += new System.EventHandler(this.dgvListaArticulo_SelectionChanged);
             // 
             // pbxArticulo
             // 
-            this.pbxArticulo.Location = new System.Drawing.Point(772, 13);
+            this.pbxArticulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbxArticulo.Location = new System.Drawing.Point(772, 78);
             this.pbxArticulo.Name = "pbxArticulo";
-            this.pbxArticulo.Size = new System.Drawing.Size(266, 361);
+            this.pbxArticulo.Size = new System.Drawing.Size(266, 296);
             this.pbxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxArticulo.TabIndex = 1;
             this.pbxArticulo.TabStop = false;
@@ -125,6 +127,7 @@
             this.CbCategoria.Name = "CbCategoria";
             this.CbCategoria.Size = new System.Drawing.Size(121, 21);
             this.CbCategoria.TabIndex = 7;
+            this.CbCategoria.SelectionChangeCommitted += new System.EventHandler(this.CbCategoria_SelectionChangeCommitted);
             // 
             // label4
             // 
@@ -143,6 +146,8 @@
             this.CbMarca.Name = "CbMarca";
             this.CbMarca.Size = new System.Drawing.Size(121, 21);
             this.CbMarca.TabIndex = 9;
+            this.CbMarca.SelectedIndexChanged += new System.EventHandler(this.CbMarca_SelectedIndexChanged);
+            this.CbMarca.SelectionChangeCommitted += new System.EventHandler(this.CbMarca_SelectionChangeCommitted);
             // 
             // BtnAdd
             // 
@@ -202,7 +207,6 @@
             this.BtnAplicar.TabIndex = 16;
             this.BtnAplicar.Text = "APLICAR";
             this.BtnAplicar.UseVisualStyleBackColor = true;
-            this.BtnAplicar.Click += new System.EventHandler(this.BtnAplicar_Click);
             // 
             // FormListado
             // 
@@ -225,6 +229,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbxArticulo);
             this.Controls.Add(this.dgvListaArticulo);
+            this.MaximumSize = new System.Drawing.Size(1066, 474);
+            this.MinimumSize = new System.Drawing.Size(1066, 474);
             this.Name = "FormListado";
             this.Text = "Listado De Articulos";
             this.Load += new System.EventHandler(this.FormListado_Load);

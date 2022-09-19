@@ -178,40 +178,9 @@ namespace TP2WindowsForms
             OcultarColumns();
         }
 
-        private void BtnAplicar_Click(object sender, EventArgs e)
-        {
-            if (CbOrdenar.SelectedIndex != -1)
-            {
-                ArticuloDato dato = new ArticuloDato();
-                string criterio = CbOrdenar.Text;
-                Lista(dato.Ordenar(criterio));
-            }
+       
 
-            if (CbCategoria.SelectedIndex != -1 && CbMarca.SelectedIndex != -1)
-            {
-                Articulo Aux = new Articulo();
-                List<Articulo> lista;
-                Aux.Categoria = (Categoria)CbCategoria.SelectedItem;
-                Aux.Marca = (Marca)CbMarca.SelectedItem;
-
-
-
-                if (CbCategoria.SelectedIndex != -1)
-                {
-                    lista = listaArticulo.FindAll(x => x.Categoria.IdCategoria == Aux.Categoria.IdCategoria);
-                }
-                else
-                {
-                    lista = listaArticulo.FindAll(x => x.Categoria.IdCategoria == Aux.Categoria.IdCategoria && x.Marca.IdMarca == Aux.Marca.IdMarca);
-                }
-
-                Lista(lista);
-                OcultarColumns();
-
-            }
-
-
-        }
+        
 
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
@@ -231,8 +200,68 @@ namespace TP2WindowsForms
             OcultarColumns();
 
         }
+
+        private void dgvListaArticulo_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Articulo Select = new Articulo();
+            Select = (Articulo)dgvListaArticulo.CurrentRow.DataBoundItem;
+
+            FormVerDetalle Lal = new FormVerDetalle(Select);
+            Lal.ShowDialog();
+            DatosGrid();
+        }
+
+        private void CbCategoria_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            Articulo Aux = new Articulo();
+            List<Articulo> lista;
+            Aux.Categoria = (Categoria)CbCategoria.SelectedItem;
+            Aux.Marca = (Marca)CbMarca.SelectedItem;
+            if (CbMarca.SelectedIndex == -1)
+            {
+
+                lista = listaArticulo.FindAll(x => x.Categoria.IdCategoria == Aux.Categoria.IdCategoria);
+            }
+
+            else
+            {
+                lista = listaArticulo.FindAll(x => x.Categoria.IdCategoria == Aux.Categoria.IdCategoria && x.Marca.IdMarca == Aux.Marca.IdMarca);
+            }
+
+                Lista(lista);
+                OcultarColumns();
+        }
+
+        private void CbMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CbMarca_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            Articulo Aux = new Articulo();
+            List<Articulo> lista;
+            Aux.Categoria = (Categoria)CbCategoria.SelectedItem;
+            Aux.Marca = (Marca)CbMarca.SelectedItem;
+            if (CbCategoria.SelectedIndex == -1)
+            {
+
+                lista = listaArticulo.FindAll(x => x.Marca.IdMarca == Aux.Marca.IdMarca);
+            }
+            else
+            {
+                lista = listaArticulo.FindAll(x => x.Categoria.IdCategoria == Aux.Categoria.IdCategoria && x.Marca.IdMarca == Aux.Marca.IdMarca);
+            }
+
+            Lista(lista);
+            OcultarColumns();
+        }
     }
+
 }
+        
+
+
         
        
         

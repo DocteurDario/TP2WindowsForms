@@ -169,15 +169,17 @@
             // 
             // PicBoxAdd
             // 
-            this.PicBoxAdd.Location = new System.Drawing.Point(303, 32);
+            this.PicBoxAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PicBoxAdd.Location = new System.Drawing.Point(303, 19);
             this.PicBoxAdd.Name = "PicBoxAdd";
-            this.PicBoxAdd.Size = new System.Drawing.Size(239, 178);
+            this.PicBoxAdd.Size = new System.Drawing.Size(271, 238);
+            this.PicBoxAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBoxAdd.TabIndex = 14;
             this.PicBoxAdd.TabStop = false;
             // 
             // BtnAdd
             // 
-            this.BtnAdd.Location = new System.Drawing.Point(506, 281);
+            this.BtnAdd.Location = new System.Drawing.Point(414, 281);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(86, 37);
             this.BtnAdd.TabIndex = 0;
@@ -205,14 +207,15 @@
             this.groupBox1.Controls.Add(this.textNombre);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(580, 250);
+            this.groupBox1.Size = new System.Drawing.Size(580, 263);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar articulo";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // BtnCancel
             // 
-            this.BtnCancel.Location = new System.Drawing.Point(414, 281);
+            this.BtnCancel.Location = new System.Drawing.Point(506, 281);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(86, 37);
             this.BtnCancel.TabIndex = 1;
@@ -228,6 +231,8 @@
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnAdd);
+            this.MaximumSize = new System.Drawing.Size(619, 369);
+            this.MinimumSize = new System.Drawing.Size(619, 369);
             this.Name = "FormAgregar";
             this.Text = "00";
             this.Load += new System.EventHandler(this.FormAgregar_Load);
